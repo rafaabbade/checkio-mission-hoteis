@@ -1,18 +1,27 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    O hotel da Colônia de Férias dos Professores está com uma promoção para as férias de julho. A promoção é válida para quem chegar a partir do dia 1 de julho e sair no dia 1 de agosto.</p>
+<p>O preço da diária do hotel é menor para quem chegar mais cedo, e vai aumentando a cada dia. Mais precisamente, a promoção funciona assim:</p><ul>
+<li>A diária do hotel para cada quem chegar no dia 1 é D Reais. Assim, quem chegar no dia 1 vai pagar um total de 31 × D Reais.</li>
+<li>A diária do hotel aumenta A reais por dia. Ou seja, a diária é D + A Reais para quem chegar no dia 2; D + 2 × A Reais no dia 3; D + 3 × A Reais no dia 4 e assim por diante.</li>
+<li>A partir do dia 16 a diária não aumenta mais.</li></ul>
+<p>Note que quem chegar no dia 2 vai pagar um total de 30 × (D + A) reais; quem chegar no dia 3 vai pagar um total de 29 × (D + 2 × A) reais, e assim por diante.</p>
+<p>Bruno gosta muito da professora Vilma, e para agradá-la quer ajudá-la a planejar suas férias, escrevendo um programa para calcular o total (em Reais) que a professora Vilma vai gastar, dependendo
+do dia em que chegar no hotel.
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Um inteiro D, o valor da diária no dia 1 de julho.
+Um inteiro A, o aumento da diária a cada dia, de 2 a 15 de julho.
+Um inteiro N, o dia de chegada ao hotel.
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Um único inteiro, o custo total da hospedagem de N até o final de julho.
 </p>
 
 
@@ -28,7 +37,12 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    calcular_custo_hotel(100, 10, 1) == 3100
+calcular_custo_hotel(100, 20, 15) == 6460
+calcular_custo_hotel(100, 5, 16) == 2720
+calcular_custo_hotel(150, 10, 15) == 8050
+calcular_custo_hotel(200, 25, 31) == 200
+calcular_custo_hotel(50, 5, 2) == 4575
 </pre>
 {% endif %}
 </div>

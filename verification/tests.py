@@ -24,15 +24,15 @@ TESTS = {
     },
     {
         "input": [150, 10, 15],
-        "answer": 8050
+        "answer": 4930
     },
     {
         "input": [200, 25, 31],
-        "answer": 200
+        "answer": 550
     },
     {
         "input": [50, 5, 2],
-        "answer": 4575
+        "answer": 1650
     }
     ]
 }

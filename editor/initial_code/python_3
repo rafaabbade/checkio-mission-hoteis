@@ -11,8 +11,8 @@ print(calcular_custo_hotel(100, 10, 1) )
 assert calcular_custo_hotel(100, 10, 1) == 3100
 assert calcular_custo_hotel(100, 20, 15) == 6460
 assert calcular_custo_hotel(100, 5, 16) == 2720
-assert calcular_custo_hotel(150, 10, 15) == 8050
-assert calcular_custo_hotel(200, 25, 31) == 200
-assert calcular_custo_hotel(50, 5, 2) == 4575
+assert calcular_custo_hotel(150, 10, 15) == 4930
+assert calcular_custo_hotel(200, 25, 31) == 550
+assert calcular_custo_hotel(50, 5, 2) == 1650
 
 print("Seu código passou pelos testes, clique em Check para avançar!")
